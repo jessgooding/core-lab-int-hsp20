@@ -1,44 +1,149 @@
-body, html {
-	font-family: 'Playfair Display', serif;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	width: 100%;
+html, body {
+
+
+
+margin:0;
+
+padding:0;
+
+
+
+}
+
+
+.grid {
+	display:grid;
 	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.centered {
-	max-width: 80%;
-
-}
-.name {
-	color: black;
-}
-.section {
-    background-color: black;
-    color: white;
-    display: inline-block;
-    width: 20em;
-    height: 20em;
-    transition: 0.3s ease-in-out;
+	grid-template: repeat(80, 1fr) / repeat(80, 1fr);
+	margin: 0px;
+	/*background-color: #e9e6de;*/
 
 }
 
-.section h1 {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.one {
+	grid-area: 10 / 10 / span 20 /span 20;
+	color: red;
+	font-weight: bold;
+	font-size: 100px;
+	text-decoration: none;
 }
 
-.section:hover {
-	background-color: white;
-	color: black;
+.two {
+	grid-area: 10 / 47 / span 20 /span 30;
+	color: red;
+	font-weight: bold;
+	font-size: 100px;
+	text-align: right;
+	text-decoration: none;
 }
 
-a {
-	text-decoration: none; 
+.three {
+	grid-area: 60 / 26 / span 50 /span 50;
+	color: red;
+	font-weight: bold;
+	font-size: 100px;
+	text-align: left;
+	text-decoration: none;
 }
 
+a:hover +.one, .one:hover{
+	color: orange;
+}
+
+a:hover +.two, .two:hover{
+	color: orange;
+}
+
+a:hover +.three, .three:hover{
+	color: orange;
+}
+
+/*WEEKS*/
+
+
+.weeks {
+	grid-area: 2 / 11 / span 80 / span 80;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	color: red;
+	font-weight: medium;
+	text-decoration: none;
+	
+}
+
+.week2 {
+	grid-area: 2 / 24 / span 10/ span 10;
+	position: sticky;
+}
+
+.week3 {
+	grid-area: 2 / 37 / span 10/ span 10;
+}
+
+.week4 {
+	grid-area: 2 / 51 / span 10/ span 10;
+}
+
+.week5 {
+	grid-area: 2 / 65 / span 10/ span 10;
+}
+
+.week6 {
+	grid-area: 17 / 75 / span 10/ span 10;
+	 transform: rotate(90deg);
+}
+
+.week7 {
+	grid-area: 35 / 75 / span 10/ span 10;
+	 transform: rotate(90deg);
+}
+
+.week8 {
+	grid-area: 55 / 75 / span 10/ span 10;
+	 transform: rotate(90deg);
+}
+
+.week9 {
+	grid-area: 69 / 61 / span 10/ span 10;
+	 transform: rotate(180deg);
+}
+
+.week10 {
+	grid-area: 69 / 48 / span 10/ span 10;
+	 transform: rotate(180deg);
+}
+
+.week11 {
+	grid-area: 69 / 35 / span 10/ span 10;
+	 transform: rotate(180deg);
+}
+
+.week12 {
+	grid-area: 69 / 21 / span 10/ span 10;
+	 transform: rotate(180deg);
+}
+
+.week13 {
+	grid-area: 69 / 7 / span 10/ span 10;
+	 transform: rotate(180deg);
+}
+
+.week14 {
+	grid-area: 47 / 2 / span 20/ span 10;
+	 transform: rotate(-90deg);
+}
+
+.week15 {
+	grid-area: 26 / 2 / span 20/ span 10;
+	 transform: rotate(-90deg);
+}
+
+.week16 {
+	grid-area: 7 / 2 / span 20/ span 10;
+	 transform: rotate(-90deg);
+}
+
+.blah {
+	grid-area: 80 / 7 / span 30 /span 20;
+	background-color: blue;
+}
