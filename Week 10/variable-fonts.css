@@ -15,7 +15,7 @@
 
 html {
   box-sizing: border-box;
-  font-family: "Roboto VF", "Roboto", sans-serif;
+  font-family: 'Playfair Display', serif;
 }
 
 *, *:before, *:after {
@@ -27,7 +27,7 @@ body {
 }
 
 .container {
-  font-family: "Roboto VF", "Roboto", sans-serif;  margin: 0 auto;
+  font-family: 'Playfair Display', serif;  margin: 0 auto;
   max-width: 60rem;
   padding: 3rem;
   text-align: left;
