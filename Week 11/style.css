@@ -1,0 +1,65 @@
+.button-one {
+	 width: 200px;
+      height: 60px;
+      background: #f6984e;
+      border-radius: 5%;
+      display: block;
+      z-index: 2; 
+      color: white;
+      text-align: center;
+      font-size: 30px;
+      padding-top: 20px;
+}
+
+ div:hover + .button-one-one, .button-one-one:hover{ 
+  background-color:  #e3c8ac;
+  color: ;
+}
+
+.button-two {
+	 width: 200px;
+      height: 60px;
+      background: #ece4db;
+      border-radius: 5%;
+      display: block;
+      position: relative;
+      z-index: 1;
+      margin-top: 20px;
+      padding-top: 20px;
+      text-align: center;
+      font-size: 30px;
+}
+
+.button-three {
+	 width: 200px;
+      height: 60px;
+      background: white;
+      border: 2px solid #f6984e;
+      border-radius: 5%;
+      display: block;
+      position: relative;
+      z-index: 1;
+      margin-top: 20px;
+      padding-top: 20px;
+      text-align: center;
+      font-size: 30px;
+}
+
+.list {
+	  width: 200px;
+      height: 420px;
+      background: white;
+      border: 2px solid #f6984e;
+      border-radius: 5%;
+      display: block;
+      position: relative;
+      z-index: 1;
+      padding-top: 20px;
+      text-align: center;
+      font-size: 30px;
+      float: right;
+}
+
+a:hover + .button-one-one, .button-one-one:hover{
+	display:none;
+}
